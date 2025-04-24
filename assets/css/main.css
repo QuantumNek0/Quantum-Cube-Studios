@@ -2834,6 +2834,27 @@ input, select, textarea {
 
 		}
 
+/* Index Icon */
+
+	#index-icon {
+		filter: blur(5px);
+		-webkit-filter: blur(5px);
+	}
+	
+/* Tiles Title */
+
+	#tiles-title {
+		margin-top: 50px;
+		margin-bottom: -30px;
+		font-size: 25px;
+	}
+
+/* CV */
+
+		#CV {
+			margin-top: 70px;
+		}
+
 /* Header */
 
 	#header {
