@@ -182,4 +182,27 @@
 
 			});
 
+    // Generic overlay function
+    function showTextOverlay(text) {
+        $('.text-overlay').remove();
+
+        var $overlay = $('<div class="text-overlay">' + text + ' <span class="close-overlay">&times;</span></div>');
+
+        $('body').append($overlay);
+
+        $overlay.find('.close-overlay').on('click', function() {
+            $overlay.remove();
+        });
+    }
+
+    // contact overlays
+    $('#email-icon').on('click', function(e) {
+        e.preventDefault();
+        showTextOverlay('<b>[Email]</b> axl-jimenez@outlook.com');
+    });
+	$('#discord-icon').on('click', function(e) {
+        e.preventDefault();
+        showTextOverlay('<b>[Discord user]</b> quantumneko');
+    });
+
 })(jQuery);

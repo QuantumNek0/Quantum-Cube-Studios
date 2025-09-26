@@ -3356,3 +3356,26 @@ input, select, textarea {
 			}
 
 		}
+
+	/* Generic text overlay for notifications or info popups */
+	.text-overlay {
+		position: fixed;
+		left: 50%;
+		bottom: 30px;
+		transform: translateX(-50%);
+		background: #222;
+		color: #fff;
+		padding: 16px 24px;
+		border-radius: 8px;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+		z-index: 9999;
+		font-size: 1.1em;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	.text-overlay .close-overlay {
+		cursor: pointer;
+		font-size: 1.3em;
+		margin-left: 10px;
+	}
